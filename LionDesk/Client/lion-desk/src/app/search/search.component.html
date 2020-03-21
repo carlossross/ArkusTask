@@ -1,0 +1,16 @@
+<mat-form-field>
+    <input matInput placeholder="Search" [(ngModel)]="toSearch">
+</mat-form-field>
+<button mat-button (click)="search()">Buscar</button>
+
+<div>
+    count = {{ count }}
+</div>
+
+<div>
+    <mat-card *ngFor="let item of data">
+        <mat-card-content>
+            {{ item | json }}
+        </mat-card-content>
+    </mat-card>
+</div>

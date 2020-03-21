@@ -1,0 +1,30 @@
+<form (ngSubmit)="addData()" #dataForm="ngForm">
+    <mat-form-field>
+        <input matInput placeholder="First Name" required [(ngModel)]="data.first_name" name="firstName">
+    </mat-form-field>
+
+    <mat-form-field>
+        <input matInput placeholder="Last Name" required [(ngModel)]="data.last_name" name="lastName">
+    </mat-form-field>
+
+    <mat-form-field>
+        <input matInput placeholder="Age" [(ngModel)]="data.age" name="age">
+    </mat-form-field>
+
+    <mat-form-field>
+        <input matInput placeholder="Company" required [(ngModel)]="data.company" name="company">
+    </mat-form-field>
+
+    <mat-form-field>
+        <input matInput placeholder="Email" required [(ngModel)]="data.email" name="email">
+    </mat-form-field>
+
+    <mat-form-field>
+        <input matInput placeholder="Phone" [(ngModel)]="data.phone" name="phone">
+    </mat-form-field>
+
+    <mat-form-field>
+        <input matInput placeholder="City" [(ngModel)]="data.city" name="city">
+    </mat-form-field>
+    <button mat-button type="submit">Agregar</button>
+</form>
